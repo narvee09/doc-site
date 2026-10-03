@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= content_for(:title) || "Doc Test Site" %></title>
+    <title><%= content_for(:title) || "Doctor title" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="application-name" content="Doc Test Site">
@@ -24,6 +24,40 @@
   </head>
 
   <body>
+      <nav class="main-nav">
+        <ul>
+          <li><%= link_to "Home", root_path %></li>
+          <li><%= link_to "About", "/about" %></li>
+          <li><%= link_to "Services", "/services" %></li>
+          <li><%= link_to "Contact", "/contact" %></li>
+        </ul>
+      </nav>
+  
     <%= yield %>
+
+
+
+    <footer>
+    <div class="closing">
+      <div class="pre-wrap-container1">
+        <p> We are here to help....Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+        Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+      </div>
+      <div class="pre-wrap-container2">Ready to schedlue an appointment?
+        <p>Fill out the Form below</p>
+          <button class="btn-container">Schedlue</button>
+      </div>
+    </div>
+    <div class="footer">
+      <p>&copy; <%= Time.current.year %> Doctor name </p>
+      <nav class="footer-nav">
+        <a <%= link_to "About", "/about" %></a>
+        <span class="sqsrte-text-color--black">  |  </span>
+        <a <%= link_to "Services", "/services" %></a>
+        <span class="sqsrte-text-color--black">  |  </span>
+        <a <%= link_to "Contact", "/contact" %></a>
+      </nav>
+    </div>
+    </footer>
   </body>
 </html>

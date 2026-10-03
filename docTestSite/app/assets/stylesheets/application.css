@@ -8,3 +8,85 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+html, body{
+    height: 100%;
+    margin: 0;
+
+}
+
+ body {
+    background-color: #f6f5ee;
+    display: flex;
+    flex-direction: column;
+ }
+
+ .section-border{
+    border: red solid;
+    min-height: 755.85;
+ }
+
+ .btn-container {
+    background-color: chocolate;
+ }
+
+ .main-nav {
+    border: solid grey;
+    display: flex;
+
+    
+ }
+
+.one{
+    border: black solid;
+    width: 300px;
+    min-height: 400px;
+    padding: 20px;
+    /* margin: 15px; */
+    box-sizing: border-box;
+}
+
+.gen{
+    border: black dashed;
+    /* width: 300px; */
+    min-height: 400px;
+    padding: 20px;
+    /* margin: 15px; */
+    box-sizing: border-box;
+}
+
+
+ footer {
+    border: black solid;
+    min-height: 400px;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+    
+
+ }
+
+ .closing {
+    /* border:red solid; */
+    background-color: #b9b29d;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .pre-wrap-container1{
+    border:navy solid;
+    margin-right: 300px;
+ }
+
+ .pre-wrap-container2{
+    border: green solid;
+    justify-content: right;
+ }
+
+ .footer{
+    border: black dashed;
+    display: flex;
+    justify-content: space-between;
+
+ }
