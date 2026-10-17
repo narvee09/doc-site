@@ -21,21 +21,78 @@ html, body{
     flex-direction: column;
  }
 
+   header {
+      border: red solid;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      min-height: 700px;
+      max-height: 700px;
+      gap: 20px;      
+      /* margin: 15px; */
+      /* box-sizing: border-box; */
+         }
+      .main-nav {
+         border: solid grey;
+         display: flex;
+         max-height: 150px;
+         /* will need to change the width auto scale, current limit set to <ul> */
+         /* display: flex; */
+         /* flex-direction: column; */
+         /* flex-wrap: wrap; */
+      }
+      .callToAction{
+         border: blue dashed;
+         display: flex;
+         justify-content: space-between;
+         padding-top:  45px;
+         padding-bottom: 45px;
+         max-height: 300px;
+         /* flex-direction: column; */
+         /* flex-wrap: wrap; */
+         gap: 50px;
+         /* min-height: 10px; */
+      }
+         .headerTextContentContainer1{
+            border: black solid;
+            justify-content: bottom;
+            flex: 1;
+            min-width: 0;
+            overflow-wrap: break-word;
+            /* display: flex;
+            flex-direction: column;
+            flex-wrap: wrap; */
+         }
+            .titleText1{
+               border: red solid;
+               font-size: 32px;
+               flex: 1;
+               min-width: 0;
+               overflow-wrap: break-word;
+            }
+            .textboxConent{
+               border: red dashed;
+               overflow: hidden;
+            }
+         .headerButtonContainer{
+            border: green solid;
+            flex: 1;
+         }
+            .btn{
+               background-color: chocolate;
+            }
+
+
+
+
+
  .section-border{
     border: red solid;
     min-height: 755.85;
  }
 
- .btn-container {
-    background-color: chocolate;
- }
 
- .main-nav {
-    border: solid grey;
-    display: flex;
 
-    
- }
 
 .one{
     border: black solid;
@@ -53,6 +110,11 @@ html, body{
     padding: 20px;
     /* margin: 15px; */
     box-sizing: border-box;
+}
+
+.img{
+   background-image: url('top_div_image.jpg') ;
+   background-size: cover;
 }
 
 

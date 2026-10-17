@@ -22,8 +22,8 @@
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
   <body>
+    <header>
       <nav class="main-nav">
         <ul>
           <li><%= link_to "Home", root_path %></li>
@@ -32,7 +32,16 @@
           <li><%= link_to "Contact", "/contact" %></li>
         </ul>
       </nav>
-  
+      <div class ="callToAction">
+        <div class="headerTextContentContainer1">
+          <h3 class="titleText1">Life is hard feel some type of way</h3>
+          <p class="textboxConent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation lamco aboris</p>
+        </div>
+        <div class="headerButtonContainer">
+          <button class="btn">Book an apptointment</button>
+        </div>
+      </div>
+    </header>
     <%= yield %>
 
 
